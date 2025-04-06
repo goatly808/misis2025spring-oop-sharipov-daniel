@@ -3,4 +3,4 @@ project(MyProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(my_executable src/main.cpp src/utils.cpp)
+add_executable(my_executable )
