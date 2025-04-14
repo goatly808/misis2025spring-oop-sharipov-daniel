@@ -11,7 +11,7 @@ using namespace std::chrono;
 
 int main() {
     /*
-    
+
     std::string str1 = "Привет";
     std::string str2 = "Мир";
     std::cout << "До обмена: str1 = " << str1 << ", str2 = " << str2 << "\n";
@@ -30,6 +30,33 @@ int main() {
     std::cout << "Список: " << container_to_string(lst) << "\n";
     std::cout << "Множество: " << container_to_string(st) << "\n";   //проверка работы контейнера
 
+    */
+
+    /*
+   
+    // Массив из 5 целых чисел
+    MyArray<int, 5> intArray;
+    for (size_t i = 0; i < intArray.size(); ++i) {
+        intArray[i] = static_cast<int>(i * 10);
+    }
+    std::cout << "MyArray<int, 5>: ";
+    for (size_t i = 0; i < intArray.size(); ++i) {
+        std::cout << intArray[i] << " ";
+    }
+    std::cout << "\n";
+
+    // Массив из 3 строк
+    MyArray<std::string, 3> strArray;
+    strArray[0] = "Один";
+    strArray[1] = "Два";
+    strArray[2] = "Три";
+    std::cout << "MyArray<std::string, 3>: ";
+    for (size_t i = 0; i < strArray.size(); ++i) {
+        std::cout << strArray[i] << " ";
+    }
+    std::cout << "\n";  //проверка работы массива
+
+    
     */
 
     const size_t n = 10000000;  // число элементов (например, 10 миллионов)
