@@ -1,11 +1,19 @@
 #include "MyVector.h"
+#include "Swap.h"
 #include <chrono>
 #include <iostream>
 #include <vector>
-
+#include <string>
 using namespace std::chrono;
 
 int main() {
+    
+    std::string str1 = "Привет";
+    std::string str2 = "Мир";
+    std::cout << "До обмена: str1 = " << str1 << ", str2 = " << str2 << "\n";
+    mySwap(str1, str2);
+    std::cout << "После обмена: str1 = " << str1 << ", str2 = " << str2 << "\n"; //проверка работы swap
+
     const size_t n = 10000000;  // число элементов (например, 10 миллионов)
 
     // Создаем большой объект
