@@ -1,18 +1,36 @@
 #include "MyVector.h"
 #include "Swap.h"
+#include "ContainerToString.h"
 #include <chrono>
 #include <iostream>
 #include <vector>
 #include <string>
+#include <list>
+#include <set>
 using namespace std::chrono;
 
 int main() {
+    /*
     
     std::string str1 = "Привет";
     std::string str2 = "Мир";
     std::cout << "До обмена: str1 = " << str1 << ", str2 = " << str2 << "\n";
     mySwap(str1, str2);
     std::cout << "После обмена: str1 = " << str1 << ", str2 = " << str2 << "\n"; //проверка работы swap
+
+    */
+
+    /*
+    
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+    std::list<std::string> lst = {"один", "два", "три"};
+    std::set<char> st = {'a', 'b', 'c'};
+
+    std::cout << "Вектор: " << container_to_string(vec) << "\n";
+    std::cout << "Список: " << container_to_string(lst) << "\n";
+    std::cout << "Множество: " << container_to_string(st) << "\n";   //проверка работы контейнера
+
+    */
 
     const size_t n = 10000000;  // число элементов (например, 10 миллионов)
 
